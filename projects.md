@@ -65,6 +65,56 @@ involves extending our TrackFM compiler to explore novel prefetching techniques,
 I will be submitting a grant to support this work soon. 
 
 ## Wenqian
+### AI Surrogates for HPC Applications
+#### Project (1) Constructing AI surrogate models for large-scale scientific applications 
+This project focuses on designing and training AI-based surrogate models to approximate complex, large-scale scientific simulations. By capturing the essential dynamics of these simulations, the surrogate models can significantly speed up computation while maintaining high accuracy. 
+-- Physics-informed machine learning
+-- AutoML
+-- Hybrid ML/numerical approaches 
+Background reading: 
+[1] SC’18: CosmoFlow: Using Deep Learning to Learn the Universe at Scale
+[2] SC’19: Smart-PGSim: Using Neural Network to Accelerate AC-OPF Power Grid Simulation (Our paper)
+[3] SC’20: Pushing the limit of molecular dynamics with ab initio accuracy to 100 million atoms with machine learning (Our paper)
+[4] AlphaFold 1,2,3 
+[5] SC’23: GenSLMs: Genome-scale language models reveal SARS-CoV-2 evolutionary dynamics
+(Our works are pure AI surrogate works, others are AI for Science frameworks, i.e., replacing the whole applications with AI models)
+
+#### Project (2) Adapting foundation AI models in HPC applications via understanding their dynamic program behaviors
+In this project, we aim to adapt powerful, pre-trained foundation models (e.g., backbone models trained on a subject of datasets) to HPC applications. The key challenge is to analyze and understand the dynamic behavior of HPC programs so that we can fine-tune the foundation model to adapt to different downstream tasks (e.g., braches) effectively. 
+A high-risk high-reward topic to explore. It is still in its early stages, but I have several HPC applications in my mind to explore! I love this project. Come and talk to me if you are interested. 
+
+#### Project (3) Program-Insight Driven Code Selection for AI Surrogates
+This project seeks to automatically identify the most beneficial parts of HPC applications that can be replaced or augmented by AI surrogates. By analyzing performance data and program characteristics, we will develop methodologies to select code segments where AI can offer the greatest speedup or efficiency gains. Students will engage in program analysis, surrogate model design, and algorithm/framework design for performance trade-offs.
+
+Background reading: 
+[1] HPDC’23: Auto-HPCnet: An Automatic Framework to Build Neural Network-based Surrogate for High-Performance Computing Applications (Our paper)
+[2] SC’24: HPAC-ML: A Programming Model for Embedding ML Surrogates in Scientific Applications
+[3] 2022: AI-coupled HPC Workflow Applications, Middleware and Performance
+[4] 2024: AI-coupled HPC Workflows 
+[5] 2024: Feasibility Study on Active Learning of Smart Surrogates for Scientific Simulations
+[6] 2020: Using Machine Learning at scale in numerical simulations with SmartSim: An application to ocean climate modeling
+
+One NSF project and one preliminary work (paper) are under submission.
+
+
+### System optimization for Large-scale Scientific AI models
+#### Project (1) Boosting the performance with cutting-edge AI accelerators (Cerebras, Sambanova, Groq, etc) 
+This project investigates how emerging AI accelerator hardware can transform large-scale scientific AI workloads. Students will experiment with state-of-the-art processors—such as Cerebras, Sambanova, and Groq—to optimize model training and inference. The goal is to uncover new strategies for parallelism, memory management, and computation efficiency that push the limits of scientific AI performance.
+
+Background reading:
+[1] Steering Customized AI Architectures for HPC Scientific Applications
+[2] Cerebras Architecture Deep Dive: First Look Inside the Hardware/Software Co-Design for Deep Learning
+
+#### Project (2) Mitigating the memory bottleneck in scientific foundation AI models
+Large-scale scientific models often face severe memory constraints when handling scientific data. In this project, we will develop techniques—such as model partitioning, sparsity, and on-the-fly compression—to alleviate memory bottlenecks in HPC and AI applications. Students will tackle system-level optimizations, explore hardware-aware methods, and build scalable solutions for next-generation scientific AI models.
+
+-- Profiling the performance of scientific AI models such as throughputs, memory usage and data transfer or communication overhead, etc
+-- System-level optimization such as kernel optimization, kernel optimization, load balance, and overlapping of communication and computation, etc  
+
+Background reading: 
+[1] Models: Awesome-Foundation-Models-for-Weather-and-Climate (https://github.com/shengchaochen82/Awesome-Foundation-Models-for-Weather-and-Climate)
+[2] MLsys papers: FlashAttention, Zero, Zero-infinity, FlexLLMGen, FlashInfer, etc   
+
 
 
 # Project Interest
